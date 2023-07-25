@@ -211,7 +211,7 @@ cursor: pointer;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.15);
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
     width: 300px;
-    padding: 8px;
+    padding: 5px;
     margin: 3px;
     border-radius: 10px;
     
@@ -370,7 +370,7 @@ cursor: pointer;
 }
 
 .card-lg{
-    width: 500px;
+    width: 450px;
     padding: 19px;
     color: black;
     display: flex;
