@@ -305,7 +305,7 @@ cursor: pointer;
     justify-content: center;
 }
 .cardx{
-    width: 350px;
+    width: 300px;
     padding: 19px;
     color: black;
     display: flex;
@@ -370,7 +370,7 @@ cursor: pointer;
 }
 
 .card-lg{
-    width: 550px;
+    width: 500px;
     padding: 19px;
     color: black;
     display: flex;
