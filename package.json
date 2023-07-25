@@ -2,7 +2,7 @@
   "name": "insuhome",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sivach.github.io/insuHome/",
+  "homepage": "https://siva70136.github.io/insuHome/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
