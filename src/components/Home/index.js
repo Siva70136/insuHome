@@ -7,8 +7,9 @@ import { FloatingLettersTextBuilder } from 'react-animated-text-builders'
 import Item from '../Item'
 import Item2 from '../Item2'
 import Navbar from '../Navbar'
-import { BsChevronRight, BsLinkedin, BsFacebook, BsYoutube, BsTwitter, BsWhatsapp, BsInstagram } from 'react-icons/bs'
+import { BsChevronRight, BsLinkedin, BsFacebook, BsYoutube, BsTwitter, BsWhatsapp, BsInstagram ,BsFillEnvelopeFill,BsFillTelephoneFill} from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
+import {MdLocationOn} from 'react-icons/md'
 import './index.css'
 
 const courses = [
@@ -470,22 +471,24 @@ const Home = () => {
                         <div className="footrow">
                             <ul className="payu_money">
                                 <li><span >We Accept :</span></li>
-                                <li><img src="https://webingo.in/images/upi.png" height="43" /></li>
+                                <li><img src="https://webingo.in/images/cc.png" height="53" /></li>
+                                <li><img src="https://webingo.in/images/upi.png" height="53" /></li>
                             </ul>
                         </div>
                     </div>
                     <div className="col-lg-3 col-sm-6">
                         <h5>Contact Us</h5>
                         <ul className="footer-address-list ftr-details">
-                            <li>
-                                <span><i className="fas fa-envelope"></i></span>
+                            <li className='footer-adress'>
+                                <span><BsFillEnvelopeFill/></span>
                                 <p>Email </p>
                             </li>
-                            <li>
-
+                            <li className='footer-adress'>
+                            <span><BsFillTelephoneFill /></span>
                                 <p>Phone</p>
                             </li>
-                            <li>
+                            <li className='footer-adress'>
+                            <span> <MdLocationOn /></span>
 
                                 <p>Address</p>
                             </li>
