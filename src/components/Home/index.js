@@ -125,6 +125,15 @@ const Home = () => {
     arrows:false,
   }
 
+  const settings_sm= {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className:'slider-sm',
+    speed:1000,
+    autoplaySpeed: 1900,
+    autoplay:true,
+    arrows:false,
+  }
   const setting = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -134,7 +143,15 @@ const Home = () => {
     dotsClass: 'slick-class',
     className:'owl-stage',
   }
-
+  const setting_sm = {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed:1000,
+    autoplaySpeed: 1900,
+    autoplay:true,
+    dotsClass: 'slick-class',
+    className:'owl-stage-sm',
+  }
   
   return (
     <div className='main-app'>
@@ -142,7 +159,7 @@ const Home = () => {
         <div className='banner1'>
             <div className='box1'>
                 <div className='data-box'>
-            <h2 className='data'>        
+                 <h2 className='data'>        
                 <span className='i1'>Website</span>
                 <span className='i1'>Graphics</span>
                 <span className='i1'>Marketing</span>
@@ -155,18 +172,29 @@ const Home = () => {
                 <button className='probtn btn-main'>view protifilo<BsChevronRight/></button>
                 </div>
                 </div>
-            <div>
-            <Slider {...settings}>
+                <Slider {...settings}>
                 {courses.map(each=>
                     <Item data={each} key={each.id}/>
                     )}
             </Slider>
+            <Slider {...settings_sm}>
+                {courses.map(each=>
+                    <Item data={each} key={each.id}/>
+                    )}
+            </Slider>
+        <div>
+            
             </div>
             
             </div>
         </div>
         <div className='owl-stage-outer'>
         <Slider {...setting} >
+                {company.map(each=>
+                    <Item2 data={each} key={each.id}/>
+                    )}
+            </Slider>
+            <Slider {...setting_sm} >
                 {company.map(each=>
                     <Item2 data={each} key={each.id}/>
                     )}
